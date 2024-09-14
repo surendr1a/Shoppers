@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const connection = async () => {
-  const MONGO_URI = 'your database url for connecting';
+  const MONGO_URI = 'mongodb+srv://Amazon:Amazon@cluster0.metou6t.mongodb.net/Amazon?retryWrites=true&w=majority&appName=Cluster0';
 
   try {
     await mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
